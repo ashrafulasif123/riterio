@@ -1,12 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./src/**/*.{html,js}"],
-  theme: {
-    extend: {
-      screens: {
-        mdplus: { 'raw': '(min-width: 896px) and (max-width: 1023px)' }
-      }
+module.exports = {
+    content: [
+      "./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+      extend: {
+        colors:{
+            btSecondary: 'rgb(171, 239, 95)'
+        }
+      },
     },
-  },
-  plugins: [],
-}
+    plugins: [],
+  }
+  
